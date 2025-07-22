@@ -1,0 +1,195 @@
+/* Reset & Global Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* Container for the entire home page */
+.home-container {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Menu Bar */
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #388e3c; /* Medium green */
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-bar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-bar li {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.menu-bar li:hover {
+  color: #c8e6c9;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #eaf3ea;
+  gap: 8px;
+}
+
+.search-bar input[type="text"] {
+  padding: 5px 8px;
+  font-size: 13px;
+  width: 200px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  padding: 5px 8px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.search-bar .icons {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  font-size: 18px;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  padding: 25px 30px;
+  background-color: #f0fff0;
+}
+
+.intro h2 {
+  margin-bottom: 8px;
+  font-size: 22px;
+  color: #333;
+}
+
+.intro p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  margin: 25px 0 8px;
+  font-size: 20px;
+  color: #2d2d2d;
+}
+
+/* Card Containers */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+/* Individual Cards */
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 160px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.card p {
+  margin-top: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #388e3c;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-bar ul {
+    gap: 12px;
+  }
+
+  .card-container {
+    padding: 10px;
+    gap: 12px;
+  }
+
+  .card {
+    width: 130px;
+    padding: 10px;
+  }
+
+  .intro {
+    padding: 18px;
+  }
+
+  .intro p {
+    font-size: 14px;
+  }
+
+  .search-bar input[type="text"] {
+    width: 160px;
+  }
+}
